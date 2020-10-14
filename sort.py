@@ -1,7 +1,7 @@
 
 import random
 import time
-from recursioncounter import RecursionCounter
+#from recursioncounter import RecursionCounter
 from sys import setrecursionlimit
 
 
@@ -14,7 +14,7 @@ def quicksort(lyst):
 
 
 def quicksort_helper(low, high, lyst):
-    RecursionCounter() 
+    #RecursionCounter() 
     if low < high:
         pivot_location = partition(low, high, lyst)
         quicksort_helper(low, pivot_location - 1, lyst)
@@ -51,7 +51,7 @@ def mergesort(lyst):
 
 
 def mergesort_helper(lyst, buffer, low, high):
-    RecursionCounter()
+    #RecursionCounter()
     if low < high:
         mid = (low + high) // 2
         mergesort_helper(lyst, buffer, low, mid)
